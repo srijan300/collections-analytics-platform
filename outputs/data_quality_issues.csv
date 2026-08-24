@@ -1,0 +1,6 @@
+issue_id,category,description,raw_affected_records,rejected_corrected_records,financial_impact_inr,action_taken
+DQ-001,Payment Ingestion Retries,Duplicate payment webhooks/retries sharing identical payment_reference logged as separate SUCCESS records.,17880,2530,191614466.31999993,Deduplicated payments on payment_reference keeping the earliest timestamp record.
+DQ-002,Payment Status Inclusions,"REVERSED, PENDING, and FAILED payment rows included in uncleaned ledger.",7620,7620,575772690.8199999,Filtered out non-SUCCESS payment statuses from recovery total.
+DQ-003,Agent Entity Duplication,agents.csv contains historical snapshot updates resulting in 30k rows for 1k unique agents.,30000,29000,0.0,Resolved latest agent profile using updated_at timestamp.
+DQ-004,Call Disposition Inconsistency,"Inconsistent codes across legacy, v1, and v2 schema versions (e.g., PROMISE_TO_PAY vs PTP).",35000,3926,0.0,Mapped disposition codes to unified standard taxonomy.
+DQ-005,Timezone Inconsistency,"Timestamps across calls, sessions, and accounts recorded in mixed timezones (UTC, Asia/Kolkata, Asia/Dubai).",91350,60865,0.0,Standardized all timestamps to UTC/IST normalized timestamps.

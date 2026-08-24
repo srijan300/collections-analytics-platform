@@ -1,0 +1,11 @@
+metric,value
+Full Dataset Raw SUCCESS Payments Count,17880.0
+Full Dataset Raw SUCCESS Recovery Amount (INR),1341485926.33
+Full Dataset Clean SUCCESS Payments Count,15350.0
+Full Dataset Clean SUCCESS Recovery Amount (INR),1149871460.01
+Full Dataset Duplicate-Driven Overstatement (INR),191614466.31999993
+Full Dataset Duplicate Overstatement Percentage,14.28
+7-Month Baseline Clean Recovery (Jan-Jul 2026 INR),1107128976.75
+7-Month Baseline Raw Recovery (Jan-Jul 2026 INR),1292942458.4
+7-Month Baseline Duplicate Overstatement (Jan-Jul 2026 INR),185813481.6500001
+Partial August 2026 Clean Recovery (Excluded INR),42742483.25999999
